@@ -1,7 +1,6 @@
 import { subscribeToNewRounds } from './api'
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Card } from './components/Card';
 
 class App extends Component {
   constructor(props) {
@@ -33,13 +32,6 @@ class App extends Component {
   }
 }
 
-function Card(props) {
-  console.log(props)
-  return (
-    <div className="card">
-      {props.text}
-    </div>
-  );
-}
+
 
 export default App;
